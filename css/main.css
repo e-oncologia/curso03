@@ -197,7 +197,7 @@ body.is-preload *:after {
 /* Type */
 
 body {
-  color: #858788;
+  color: #b4b4b4;
   background: -moz-radial-gradient(#858585 15%, transparent 16%),
     -moz-radial-gradient(#858585 15%, transparent 16%), #808080;
   background: -webkit-radial-gradient(#858585 15%, transparent 16%),
@@ -209,7 +209,7 @@ body {
   background-size: 20px 20px;
 }
 ::selection {
-  background: #ffd000;
+  background: #56a51d;
 }
 body,
 input,
@@ -258,7 +258,7 @@ a:hover {
 
 strong,
 b {
-  font-weight: 600;
+  font-weight: 550;
 }
 
 em,
@@ -329,19 +329,6 @@ h6 {
   background-color: #ffffff;
 }
 
-.bgblanco {
-  background-color: #ffffff;
-}
-.amarillo {
-  color: #ffd000;
-}
-.bgamarillo {
-  background-color: #ffd000;
-}
-.bgsombra {
-  color: #ffffff;
-  text-shadow: 0px 0px 11px rgba(150, 150, 150, 0.3);
-}
 .sombreado {
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.1));
   transition: all 0.3s ease-in-out;
@@ -352,7 +339,7 @@ h6 {
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0));
 }
 .transparencia {
-  opacity: 0.6;
+  opacity: 0.3;
   transition: opacity 0.3s ease-in-out;
   -moz-transition: opacity 0.3s ease-in-out;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -363,7 +350,7 @@ h6 {
 }
 .bggris {
   background: #535353;
-  color: #ffffff;
+  color: #cfcfcf;
 }
 .verde {
   color: #56a51d;
@@ -462,7 +449,7 @@ div#mainmenu {
 
 #diapos {
   padding: 1em;
-  background: #adadad;
+  background: #535353;
   opacity: 0.7;
   transition: opacity 0.3s ease-in-out;
   -moz-transition: opacity 0.3s ease-in-out;
@@ -569,4 +556,20 @@ video {
   text-align: center;
   color: #fff;
   font-size: 1.1em;
+}
+body {
+  /*min-width: 320px; */
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased !important;
+}
+.background {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat;
+  z-index: -1;
+}
+.background.fondo1 {
+  background-image: url("../img/trama.png");
 }
